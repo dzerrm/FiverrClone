@@ -1,0 +1,187 @@
+.container {
+    color: $cl-text;
+
+    .row {
+        .info-column {
+            .sellerCard-component {
+                padding: 30px;
+                text-align: center;
+                border: 0.5px solid $bg-profile-border;
+                margin-bottom: 30px;
+
+                .user-profile-info {
+                    display: flex;
+                    .user-profile-image {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        .user-img {
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                            position: relative;
+                            border-radius: 50%;
+
+                            img {
+                                width: 150px;
+                                height: 150px;
+                                object-fit: cover;
+                                border-radius: 50%;
+                            }
+                            .icon-camera{
+                                width: 150px;
+                                height: 150px;
+                                position: absolute;
+                                top:0;
+                                border-radius: 50%;
+                                input{
+                                    position: absolute;
+                                    top: 60px;
+                                    left: 30px;
+                                    opacity: 0;
+                                    z-index: 30;
+                                }
+                                .fa-camera{
+                                    display: none;
+                                    // width: 50px;
+
+                                }
+                            }
+                            .icon-camera:hover{
+                                width: 150px;
+                                height: 150px;
+                                position: absolute;
+                                top:0;
+                                background-color: rgba(37, 37, 37, 0.555);
+                                border-radius: 50%;
+                                .fa-camera{
+                                    color: $cl-text-white;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    margin-top: -25px;
+                                    margin-left: -25px;
+                                    font-size: 50px;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                .user-profile-name{
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px 0;
+                    p{
+                        font-weight: $f-weight-700;
+                        color: $cl-text-black;
+                        margin-bottom: 0;
+                    }
+                }
+                .button-wrapper{
+                    border: 1px solid $bg-profile;
+                    padding: 5px;
+                    border-radius: 5px;
+                    transition: ease-in 0.5s;
+
+                    a{
+                      color: $cl-text;
+                      transition: ease-in 0.5s;
+
+                    }
+                }
+                .button-wrapper:hover{
+                    background-color: $bg-profile;
+                    a{
+                        color: $cl-text-white;
+                    }
+                }
+                .user-desc{
+                    ul{
+                        padding-left: 0;
+                        li{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+            .user-segmentation{
+                padding: 30px;
+                border: 0.5px solid $bg-profile-border;
+            }
+            .user-segmentation{
+                .inner-row{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        font-weight: $f-weight-700;
+                        color: $cl-text-black;
+                    }
+                    a{
+                        color: $cl-add-profile;
+                        font-size: $text-14;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .title{
+                    font-size: $text-14;
+                }
+                .profile-accounts{
+                    ul{
+                        li{
+                            display: flex;
+                            color: $cl-add-profile;
+                            .cl-gg{
+                                color: $cl-text;
+                            }
+                            i{
+                                margin-right: 12px;
+                                font-size: $text-16;
+                                padding: 3px 0;
+                            }
+                            a{
+                                font-size: $text-14;
+                                margin-left: 5px;
+                                color: $cl-add-profile;
+
+                            }
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .gigs-column{
+            .card-prod{
+                border-top: 1px solid $bg-profile-border;
+                padding: 20px 10px;
+                .prod-img{
+                  img{
+                    width: 100%;
+                  }
+                }
+                .prod-title{
+                    p{
+                        margin-bottom: 0;
+                    }
+                    .prod-footer{
+                        float: right;
+                        .btn{
+                            padding: 5px 25px;
+                            border: 1px solid $bg-profile-border;
+                            margin-left: 12px;
+                        }
+                        .btn:hover{
+                            background-color: $bg-profile;
+                            color: $cl-text-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

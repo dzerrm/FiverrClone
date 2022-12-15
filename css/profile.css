@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.text-title {
+  color: black;
+  font-weight: 600;
+}
+
+.container {
+  color: #62646a;
+}
+.container .row .info-column .sellerCard-component {
+  padding: 30px;
+  text-align: center;
+  border: 0.5px solid #d1d1d1;
+  margin-bottom: 30px;
+}
+.container .row .info-column .sellerCard-component .user-profile-info {
+  display: flex;
+}
+.container .row .info-column .sellerCard-component .user-profile-info .user-profile-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container .row .info-column .sellerCard-component .user-profile-info .user-profile-image .user-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+.container .row .info-column .sellerCard-component .user-profile-info .user-profile-image .user-img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.container .row .info-column .sellerCard-component .user-profile-info .user-profile-image .user-img .icon-camera {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+}
+.container .row .info-column .sellerCard-component .user-profile-info .user-profile-image .user-img .icon-camera i {
+  display: none;
+}
+.container .row .info-column .sellerCard-component .user-profile-info .user-profile-image .user-img .icon-camera:hover {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(37, 37, 37, 0.555);
+  border-radius: 50%;
+}
+.container .row .info-column .sellerCard-component .user-profile-info .user-profile-image .user-img .icon-camera:hover i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  font-size: 50px;
+  display: block;
+}
+.container .row .info-column .sellerCard-component .user-profile-name {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.container .row .info-column .sellerCard-component .user-profile-name p {
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0;
+}
+.container .row .info-column .sellerCard-component .button-wrapper {
+  border: 1px solid #74767e;
+  padding: 5px;
+  border-radius: 5px;
+  transition: ease-in 0.5s;
+}
+.container .row .info-column .sellerCard-component .button-wrapper a {
+  color: #62646a;
+  transition: ease-in 0.5s;
+}
+.container .row .info-column .sellerCard-component .button-wrapper:hover {
+  background-color: #74767e;
+}
+.container .row .info-column .sellerCard-component .button-wrapper:hover a {
+  color: white;
+}
+.container .row .info-column .sellerCard-component .user-desc ul {
+  padding-left: 0;
+}
+.container .row .info-column .sellerCard-component .user-desc ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.container .row .info-column .user-segmentation {
+  padding: 30px;
+  border: 0.5px solid #d1d1d1;
+}
+.container .row .info-column .user-segmentation .inner-row {
+  display: flex;
+  justify-content: space-between;
+}
+.container .row .info-column .user-segmentation .inner-row p {
+  font-weight: 700;
+  color: black;
+}
+.container .row .info-column .user-segmentation .inner-row a {
+  color: #00698c;
+  font-size: 14px;
+}
+.container .row .info-column .user-segmentation .inner-row a:hover {
+  text-decoration: underline;
+}
+.container .row .info-column .user-segmentation .title {
+  font-size: 14px;
+}
+.container .row .info-column .user-segmentation .profile-accounts ul li {
+  display: flex;
+  color: #00698c;
+  margin-top: 10px;
+}
+.container .row .info-column .user-segmentation .profile-accounts ul li .cl-gg {
+  color: #62646a;
+}
+.container .row .info-column .user-segmentation .profile-accounts ul li i {
+  margin-right: 12px;
+  font-size: 16px;
+  padding: 3px 0;
+}
+.container .row .info-column .user-segmentation .profile-accounts ul li p {
+  font-size: 14px;
+}
+.container .row .gigs-column .card-prod {
+  border-top: 1px solid #d1d1d1;
+  padding: 20px 10px;
+}
+.container .row .gigs-column .card-prod .prod-img img {
+  width: 100%;
+}
+.container .row .gigs-column .card-prod .prod-title .prod-footer {
+  float: right;
+}
+.container .row .gigs-column .card-prod .prod-title .prod-footer .btn {
+  padding: 5px 25px;
+  border: 1px solid #d1d1d1;
+  margin-left: 12px;
+}
+.container .row .gigs-column .card-prod .prod-title .prod-footer .btn:hover {
+  background-color: #74767e;
+  color: white;
+}

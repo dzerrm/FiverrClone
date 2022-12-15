@@ -1,0 +1,27 @@
+.menu-pages {
+    border-top: 1px solid $bg-profile-border;
+    border-bottom: 1px solid $bg-profile-border;
+    margin-top: 20px;
+    .container {
+      padding: 0 32px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding-left: 0;
+        li {
+          border-bottom: 2px solid $cl-text-white;
+          padding: 10px;
+          cursor: pointer;
+          a {
+            color: $cl-text;
+            font-size: $text-16;
+          }
+          &:hover {
+            border-bottom: 2px solid $bg-button-hover;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+}

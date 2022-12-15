@@ -1,0 +1,49 @@
+.register_fiverr{
+  .container{
+      .row{
+          .register_form{
+              padding: 50px 10%;
+              h2{
+                  font-weight: $f-weight-600;
+                  margin-bottom: 20px;
+                  color: $cl-fiverr;
+              }
+              form{
+                .form-gender{
+                    padding: 15px 0;
+                }
+                  .form-group{
+                      p{
+                          margin-bottom: 10px;
+                      }
+                      margin-top: 15px;
+                      .txt{
+                          color: red;
+                      }
+                      input{
+                        padding: 5px 10px;
+                        width: 100%;
+                        border: 1px solid $bg-button-hover;
+                        border-radius: 5px;
+                      }
+
+                  }
+                  .form_footer{
+                      display: flex;
+                      text-align: end;
+                      align-items: center;
+
+                      .btn-register{
+                          padding: 8px 30px;
+                          border: none;
+                          background-color: $bg-button;
+                          color: $cl-text-white;
+                          border-radius: 20px;
+                      }
+
+                  }
+              }
+          }
+      }
+  }
+}

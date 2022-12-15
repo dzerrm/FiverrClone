@@ -1,0 +1,30 @@
+@import "../themes/variable";
+@import "../base/base.scss";
+
+.form-modal{
+    .modal{
+        .modal-dialog{
+            .modal-content{
+                .modal-body{
+                    .form{
+                        .row{
+                            .col-6{
+                                .form-group{
+                                    height: 75px;
+                                    margin-bottom: 1rem;
+                                    p{
+                                        margin-bottom: 0;
+                                    }
+                                    .txt{
+                                        color: red;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+//  Base
+@import "./base/base";
+
+//  Themes
+@import "./themes/variable";
+
+//  Pages
+@import './pages/home.scss';
+@import "./pages/profile.scss";
+@import "./pages/jobdetail.scss";
+@import "./pages/menuHeader/menuHeader.scss";
+@import "./pages/categories/headerCategories.scss";
+@import "./components/footer.scss";
+@import "./pages//card/cardJob.scss";
+// admin
+@import "./Admin/home.scss";
+@import "./Admin/managenment.scss";
+@import "./Admin/table.scss";
+@import "./Admin/formAction.scss";
+@import "./Admin//modalManageUser.scss";
+@import "./pages/register.scss";
+@import "./pages/login.scss";
+@import "./pages/jobList.scss";
+
+//  Components
+@import './components//formModal.scss';
+
+// .icon-next{
+//     color: red;
+//     font-size: 30px;
+// }
+
+@import "./components/header.scss";
+@import "./components/footer.scss";

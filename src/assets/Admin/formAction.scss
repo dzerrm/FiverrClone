@@ -1,0 +1,49 @@
+@import "../themes/variable";
+@import "../base/base.scss";
+
+
+.form{
+    .form-table{
+        .form-table-inner{
+            .form-group{
+                margin-bottom: 10px;
+                height: 90px;
+                .txt{
+                    color: red;
+                    font-size: $text-12;
+                }
+                p{
+                    margin-bottom: 3px;
+                    font-size: $text-16;
+                    font-weight: $f-weight-600;
+                }
+                .birthday{
+                    width: 100%;
+                }
+                select{
+                    width: 100%;
+                    padding: 6px;
+                    border: 1px solid rgba(202, 202, 202, 0.986);
+                    font-size: $text-14;
+                    .option{
+                        font-size: $text-14;
+                    }
+                }
+            }
+        }
+    }
+    .form-footer{
+        margin-top: 30px;
+        button{
+            font-size: $text-16;
+            color: $cl-text-white;
+            width: 100px;    
+            height: 40px;  
+            border: none;
+        }
+    }
+}
+
+.ant-modal-footer{
+    display: none;
+}

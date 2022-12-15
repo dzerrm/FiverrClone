@@ -1,0 +1,30 @@
+@import "../themes/variable";
+@import "../base/base.scss";
+
+.form-modal {
+  form {
+    .form-table {
+      .form-group {
+        margin-bottom: 20px;
+        .txt {
+          font-size: $text-12;
+          color: red;
+        }
+        .update-user {
+          padding: 5px 15px;
+          border: none;
+          color: $cl-text-white;
+        }
+        select {
+          width: 300px;
+          padding: 5px 10px;
+        }
+        .btn-modal{
+            padding: 5px 15px;
+            border: none;
+            color: $cl-text-white;
+        }
+      }
+    }
+  }
+}

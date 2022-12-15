@@ -1,0 +1,170 @@
+@import "../../themes/variable";
+@import "../../base/base";
+
+
+.header-fiverr{
+    position: relative;
+    z-index: 100;
+    .header-wrapper{
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            img{
+                width: 90px;
+            }
+        }
+        .fiverr-header-search{
+            .ip-search{
+               width: 380px;
+            }
+        }
+        .fiverr-nav-right{
+            ul{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                margin-right: 24px;
+                a{
+                    color: $cl-text;
+                }
+                a:hover{
+                    color: $cl-hover-1;
+                }
+            }
+            .login_header{
+                padding:5px 15px;
+                 border:1px solid $cl-fiverr;
+                 color: $cl-text;
+                 background-color: $cl-primary;
+                color: $cl-text-white;
+                border-radius: 5px;
+
+            }
+            .login_header:hover{
+                background-color: $cl-fiverr;
+                color: $cl-text-white;
+                border-radius: 5px;
+            }
+            .avata_user_login{
+                position: relative;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 2px solid $cl-fiverr;
+                }
+                .sub_login{
+                    display: none;
+                    background-color: white;
+                    border: 1px solid rgb(211, 211, 211);
+                    position: absolute;
+                    width: 180px;
+                    padding: 10px;
+                    box-shadow: 3px 6px 4px $bg-profile-border;
+                    top: 70px;
+                    right: 10px;
+                    .btn_logout:hover{
+                        color: $cl-fiverr;
+                    }
+                }
+                .sub_login::after{
+                    position: absolute;
+                    top: -12px;
+                    right: 10px;
+                    content: "";
+                    width: 23px;
+                    height: 23px;
+                    transform: rotate(45deg);
+                    border-top: 1px solid $bg-profile-border;
+                    border-left: 1px solid $bg-profile-border;
+                    background-color: white;
+                }
+
+            }
+            .avata_user_login:hover{
+                .sub_login{
+                    display: block;
+                }
+            }
+
+            }
+        }
+    }
+}
+.menu-pages{
+    border-top: 1px solid $bg-profile-border;
+    border-bottom: 1px solid $bg-profile-border;
+    margin: 10px 0  20px 0;
+    .menu-cate{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            padding-left: 0;
+            position: relative;
+
+            li{
+                padding: 9px;
+                a{
+                    color:$cl-text ;
+                }
+                a:hover{
+                    color: $cl-hover-1;
+                    border-bottom: 5px solid $cl-hover-2;
+                    padding: 11px 0;
+                    transition: ease-in-out 0.2s;
+                }
+                .sub-menu{
+                    position: absolute;  
+                    padding-top:4px ;
+                    left: 0;
+                    top: 40px;
+                    display: none;
+                    z-index: 99;
+                    ul{
+                        z-index: 20;
+                        border: 1px solid rgb(122, 122, 122);
+                        width: 1200px;
+                        padding: 0px 20px;
+                        display: flex;
+                        text-align: center;
+                        background-color: white;
+                        justify-content: center;
+                        li{
+                            height: auto;
+                            padding: 10px 0 ;
+                            a{
+                                display: block;
+                                p{
+                                    padding-bottom: 5px;
+                                }
+                            }
+                            .tenNhom{
+                                font-weight: $f-weight-700;
+                                color: $cl-text-black;
+                                margin-bottom: 5px;
+                            }
+                            a:hover{
+                                color: $cl-hover-1;
+                                border-bottom: none;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            li:hover >.sub-menu{
+                display: block;
+            }
+            li:last-child:hover.sub-menu{
+                background-color: red;
+                color: red;
+            }
+        }
+    }
+}

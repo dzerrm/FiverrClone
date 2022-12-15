@@ -1,0 +1,384 @@
+@import "../themes/variable";
+@import "../base/base.scss";
+
+
+.container {
+    .gig-page-author {
+        .main {
+            .over-view {
+                nav{
+                        display: flex;
+                        margin-bottom: 0px;
+                        justify-content: flex-start;
+                        left: 0;
+                        li{
+                            font-size: $text-14;
+                            margin-right: 5px;
+                            color: #02c2a9;
+                            .fa-chevron-right{
+                                font-size: $text-14;
+                                color: $cl-text-black;
+                            }
+                        }
+                }
+                .title {
+                    color: $cl-text-black;
+                }
+                .seller-overview {
+                    align-items: center;
+                    .avatar-author {
+                        img {
+                            border-radius: 50%;
+                            width: 50px;
+                            height: 50px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .star {
+                        .fa-star {
+                            color: $cl-star;
+                        }
+                    }
+
+                    .item {
+                        padding: 0 10px;
+                        // margin-top: 10px;
+                    }
+
+                    .rated {
+                        border-right: 1px solid $bg-profile;
+                        height: 25px;
+                    }
+                }
+            }
+
+            .slider {
+                margin-bottom: 50px;
+
+                .slideshow {
+                    height: 427px;
+                    text-align: center;
+                    padding: 0 50px;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+
+        }
+
+        .sidebar {
+            padding: 0 20px;
+
+            .tabs {
+                border: 1px solid $bg-profile-border;
+
+                .tabsList {
+                    display: flex;
+
+                    .tabHead {
+                        width: calc(100%/3);
+                        padding: 10px;
+                        border-right: 1px solid $bg-profile-border;
+                        border-bottom: 1px solid $bg-profile-border;
+                        font-weight: $f-weight-600;
+                    }
+
+                    .active {
+                        border-bottom: 3px solid $cl-cart;
+                        color: $cl-cart;
+                    }
+                }
+
+                .tab-header {
+                    padding: 20px 20px 0 20px;
+
+                    .tabContant {
+                        .package-content {
+                            .header-default {
+                                justify-content: space-between;
+                                font-weight: $f-weight-600;
+                            }
+
+                            .article {
+                                font-size: $text-12 ;
+                                .time-info {
+                                    font-weight: $f-weight-600;
+                                }
+                                .describe-title{
+                                    font-size: $text-14;
+                                }
+
+                                ul{
+                                    padding-left: 5px;
+                                    li {
+                                        display: flex;
+                                        padding-bottom: 15px;
+                                        font-size: 12;
+
+                                        i {
+                                            margin-right: 15px;
+                                        }
+
+                                        p {
+                                            margin-bottom: 0;
+                                            margin-left: 5px;
+                                            font-size: $text-16;
+                                        }
+
+                                        .active {
+                                            color: $cl-cart;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .tab-footer {
+                    text-align: center;
+                    padding: 10px 10px;
+
+                    .btn-cont {
+                        background-color: $cl-cart;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                        color: $cl-text-white;
+                        font-weight: $f-weight-600;
+                    }
+
+                    a {
+                        color: $cl-cart;
+                        font-weight: $f-weight-600;
+                    }
+                }
+            }
+        }
+
+        .row {
+            .col-review {
+                .over-review {
+                    padding: 20px 10px;
+                }
+            }
+
+            .section-title {
+                .profile-card {
+                    .profile-info {
+                        display: flex;
+                        font-size: $text-14;
+
+                        .user-profile-img {
+                            img {
+                                width: 150px;
+                                height: 150px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
+
+                        }
+
+                        .user-profile-label {
+                            padding-left: 20px;
+
+                            p {
+                                margin-bottom: 0px;
+                            }
+
+                            ul {
+                                padding-left: 0;
+
+                                i {
+                                    color: $cl-star;
+                                }
+                            }
+
+                            .btn-cl-me {
+                                padding: 10px 10px;
+                                border: 1px solid $bg-profile-border;
+                                color: $cl-add-profile;
+                                border-radius: 5px;
+                                font-size: $text-16;
+                            }
+                        }
+                    }
+                }
+            }
+            .section-callapse{
+                margin: 40px 0;
+
+                h3{
+                    font-weight: $f-weight-600;
+                }
+                font-size: 14px;
+                .ant-collapse{
+                background-color: white;
+                border: none;
+                .ant-collapse-item{
+                    .ant-collapse-header{
+                        font-size: 12px;
+                        .ant-collapse-header-text{
+                            font-weight: $f-weight-600;
+                            color: $cl-text;
+                            p{
+                                color: red;
+                            }
+                        }
+                        // .ant-collapse-expand-icon{
+
+                        // }
+                    }
+                    .ant-collapse-content{
+                        .ant-collapse-content-box{
+                            p{
+                                color: $cl-text;
+                            }
+                        }
+                    }
+                }
+            }
+            }
+            .review-package{
+                .detail{
+                    h4{
+                        font-weight: $f-weight-600;
+                    }
+                }
+                .review-header{
+                    .filter-section{
+                        .breakdown-wraper{
+                            display: flex;
+                            .breakdown-wraper-inner{
+                                .stars-counters{
+                                    width: 100%;
+                                    .tbody{
+                                        tr{
+                                            margin-bottom: 5px;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            .stars-filter{
+                                                font-weight: $f-weight-600;
+                                                width: 20%;
+
+                                            }
+                                            .progress-bar{
+                                                margin: 0 15px;
+                                                width: 80%;
+
+                                            }
+                                            .start-num{
+                                                width: 20%;
+                                            }
+                                        }
+                                    }
+                                }
+                                .ranking{
+                                    h6{
+                                        font-weight: $f-weight-600;
+                                    }
+                                    tr{
+                                        margin-bottom: 5px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        td{
+                                            .fa-star{
+                                                margin-left: 5px;
+                                                color: $cl-star;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .row {
+            .col-comment {
+                margin: 20px 0;
+                border-top: 1px solid $bg-profile-border;
+                padding-top: 40px;
+                .section-comment {
+                    .reviews-wrap {
+                        .review-list {
+                            .review-item {
+                                .user-review {
+                                    img {
+                                        width: 60px;
+                                        height: 60px;
+                                        object-fit: cover;
+                                        border-radius: 50%;
+                                    }
+
+                                    .user-info {
+                                        padding-left: 10px;
+
+                                        p {
+                                            margin-bottom: 5px;
+                                            display: flex;
+                                            font-size: $text-14;
+                                            gap: 10px;
+
+                                            img {
+                                                width: 20px;
+                                                height: 20px;
+                                                object-fit: cover;
+                                                border-radius: 0;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .review-detail {
+                                    padding: 10px 50px;
+                                }
+                            }
+
+                            .user-comment-review {
+                                .user-comment {
+                                    .user-info {
+                                        img {
+                                            width: 40px;
+                                            height: 40px;
+                                            object-fit: cover;
+                                            border-radius: 50%;
+                                            margin-right: 10px;
+                                        }
+                                    }
+
+                                    textarea {
+                                        width: 80%;
+                                        min-height: 100px;
+                                        padding: 10px;
+                                        margin-bottom: 20px;
+                                    }
+                                }
+
+                                .btn-comment {
+                                    padding: 5px 10px;
+                                    border: none;
+                                    margin-left: 50px;
+                                    background-color: $cl-primary;
+                                    color: $cl-text-white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//scss ant
+

@@ -1,0 +1,34 @@
+@import '../themes/variable';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; // font phụ
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1280px;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.text-title{
+    color: $cl-text-black;
+
+    font-weight: $f-weight-600;
+}
+
+// .table-text {
+//     // background-color: red;
+// }
+.ant-modal-root{
+    .ant-modal-mask{
+        background-color: rgba(150, 150, 150, 0.233) !important;
+    }
+}
